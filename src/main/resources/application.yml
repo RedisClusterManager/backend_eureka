@@ -1,0 +1,11 @@
+spring:
+  application:
+    name: "redis-cluster-manager-eureka"
+server:
+  port: 8500
+eureka:
+  client:
+    register-with-eureka: false
+    fetch-registry: false
+    service-url:
+      defaultZone: "http://localhost:${server.port}/eureka/"
